@@ -2,6 +2,8 @@
 <configurationDescriptor version="80">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df name="nFrames" root=".">
+      <df name="bin">
+      </df>
       <df name="include">
         <in>NF.h</in>
         <in>NFio.h</in>
@@ -15,6 +17,10 @@
       </df>
       <df name="modules">
         <in>PETlib.c</in>
+      </df>
+      <df name="obj">
+      </df>
+      <df name="plugins">
       </df>
       <df name="src">
         <in>NFcompAggregate.c</in>
@@ -76,7 +82,7 @@
           <executablePath></executablePath>
           <cTool>
             <incDir>
-              <pElem>../CMlib/include</pElem>
+              <pElem>/usr/local/share/ghaas/include</pElem>
               <pElem>include</pElem>
               <pElem>inputs</pElem>
               <pElem>/sw/include</pElem>
@@ -84,7 +90,7 @@
           </cTool>
           <ccTool>
             <incDir>
-              <pElem>../CMlib/include</pElem>
+              <pElem>/usr/local/share/ghaas/include</pElem>
               <pElem>include</pElem>
               <pElem>inputs</pElem>
               <pElem>/sw/include</pElem>
