@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="80">
+<configurationDescriptor version="84">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df name="nFrames" root=".">
       <df name="bin">
@@ -74,6 +74,8 @@
         <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
         <compilerSet>default</compilerSet>
       </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
       <makefileType>
         <makeTool>
           <buildCommandWorkingDir>.</buildCommandWorkingDir>
@@ -82,18 +84,16 @@
           <executablePath></executablePath>
           <cTool>
             <incDir>
-              <pElem>/usr/local/share/ghaas/include</pElem>
-              <pElem>include</pElem>
-              <pElem>inputs</pElem>
+              <pElem>../RGIS/CMlib/include</pElem>
               <pElem>/sw/include</pElem>
+              <pElem>/opt/X11/include</pElem>
             </incDir>
           </cTool>
           <ccTool>
             <incDir>
-              <pElem>/usr/local/share/ghaas/include</pElem>
-              <pElem>include</pElem>
-              <pElem>inputs</pElem>
+              <pElem>../RGIS/CMlib/include</pElem>
               <pElem>/sw/include</pElem>
+              <pElem>/opt/X11/include</pElem>
             </incDir>
           </ccTool>
         </makeTool>
@@ -102,18 +102,163 @@
         <cTool>
           <incDir>
             <pElem>inputs</pElem>
+            <pElem>inputs/../inputs</pElem>
           </incDir>
         </cTool>
       </folder>
-      <item path="include/NF.h" ex="true" tool="3" flavor="0">
+      <folder path="nFrames/modules">
+        <cTool>
+          <incDir>
+            <pElem>modules</pElem>
+            <pElem>modules/../modules</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="nFrames/src">
+        <cTool>
+          <incDir>
+            <pElem>src/../src</pElem>
+            <pElem>src</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <item path="include/NF.h" ex="true" tool="3" flavor2="0">
       </item>
-      <item path="include/NFio.h" ex="true" tool="3" flavor="0">
+      <item path="include/NFio.h" ex="true" tool="3" flavor2="0">
       </item>
-      <item path="include/NFobjects.h" ex="true" tool="3" flavor="0">
+      <item path="include/NFobjects.h" ex="true" tool="3" flavor2="0">
       </item>
-      <item path="include/NFtime.h" ex="true" tool="3" flavor="0">
+      <item path="include/NFtime.h" ex="true" tool="3" flavor2="0">
       </item>
-      <item path="inputs/NCfunctions.h" ex="true" tool="3" flavor="0">
+      <item path="inputs/NCfunctions.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="inputs/NCfunctions.h" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="inputs/NCgrid.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="modules/PETlib.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFcompAggregate.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFcompContainer.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFcompInput.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFcompModel.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFcompRegion.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFcontext.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFcoupler.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFdomain.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFexecute.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFio.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFlist.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFmain.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFmisc.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFmodDerivative.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFmodEquation.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFmodInterface.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFmodProcess.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFmodRoute.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFnumParameter.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFnumVariable.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFobjAlias.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFobjCategory.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFobjOutput.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFobjects.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFparse.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFplugin.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFreport.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFresolve.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="src/NFtime.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
       </item>
     </conf>
   </confs>

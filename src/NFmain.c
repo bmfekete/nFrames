@@ -127,7 +127,7 @@ Abort:
 	if (inFile != stdin) fclose (inFile);
 	return (CMfailed);
 Help:
-	CMmsgPrint (CMmsgUsrError,"%s [options] <model xml>\n",CMprgName(argv[0]));
+	CMmsgPrint (CMmsgUsrError,"%s [options] <model xml>\n",CMfileName(argv[0]));
 	CMmsgPrint (CMmsgUsrError,"  -a, --parse   [silent|report]\n");
 	CMmsgPrint (CMmsgUsrError,"  -e, --resolve [silent|skip|report]\n");
 	CMmsgPrint (CMmsgUsrError,"  -x, --execute [silent|skip|report]\n");
